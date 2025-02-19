@@ -30,3 +30,5 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+So we have 3 recursive calls that divide the array into 3 parts giving us 3T(n/3). We have a triple nested loop of n^2, n and n^2 so the run time of that would be the length multiplied together giving us O(n^5). The recurrence put together is 3T(n/3) + O(n^5). Since O(n^5) is the highest order function the run time is O(n^5).
