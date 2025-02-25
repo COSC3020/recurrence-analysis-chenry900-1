@@ -31,6 +31,7 @@ Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-So we have 3 recursive calls that divide the array into 3 parts giving us 3T(n/3). We have a triple nested loop of n^2, n and n^2 so the run time of that would be the length multiplied together giving us O(n^5). The recurrence put together is 3T(n/3) + O(n^5). If we take log3(3) we get 1 so we get T(1) + O(n^5). Once we remove the constants we end up with O(n^5).
+So we have 3 recursive calls that divide the array into 3 parts giving us 3T(n/3). We have a triple nested loop of n^2, n and n^2 so the run time of that would be the length multiplied together giving us O(n^5). The recurrence put together is 3T(n/3) + O(n^5).According to the master theorem if F(n) = O(n^c) where c > logb(a) then T(n) = O(f(n)) and since log3(3) = 1 and 5 > 1 then T(n) = O(n^5).
 
+I used copilot to help me explain how I arrived at O(n^5).
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
