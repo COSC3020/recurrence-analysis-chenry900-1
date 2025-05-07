@@ -35,4 +35,23 @@ the mystery function divides the array into thirds and is called 3 times giving 
 
 $T(n) = 3(3T(n/9) + (n/3)^5) + n^5$
 
+$T(n) = 9T(n/9) + (n/3)^5 + n^5$
+
+$T(n) = 9(3T(n/27) + (n/9)^5) + (n/3)^5 + n^5$
+
+$T(n) = 3^i T(n/3^i) + ∑ (j = 0 to i - 1) (3^j / 3^{5j}) * n^5$
+
+$n/3^i = 1$
+
+so we let $i = log3n$
+
+$T(n) = n * T(1) + n^5 * ∑ (j = 0 to log₃(n) - 1) (1 / 3^{4j})$
+
+$n * 1 + ((n - 1) / 2) * n^5$
+
+you can simplify all that to n + $n^5$
+
+this proves that the recurrence relation is T(n) ∈ $O(n^5)$
+
+I asked olivia from class and watched the lecture video then did it myself so the work is my own.
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
