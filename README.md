@@ -32,6 +32,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 the mystery function divides the array into thirds and is called 3 times giving you $3T(n/3)$. you have 2 nested for loops making the for loop run at $O(n^5)$. So the recurrance relation is $T(n) = 3T(n/3) + n^5$.
+
 $T(n) = 3(3T(n/9) + (n/3)^5) + n^5$
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
